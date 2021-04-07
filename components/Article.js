@@ -126,16 +126,16 @@ function articleMaker(  articleObject  ) {
   expandButton.classList.add('expandButton');
 
   articleDate.textContent = articleObject.date;
-  articleP1.textContent = firstParagraph;
-  articleP2.textContent = secondParagraph;
-  articleP3.textContent = thirdParagraph;
+  articleP1.textContent = articleObject.firstParagraph;
+  articleP2.textContent = articleObject.secondParagraph;
+  articleP3.textContent = articleObject.thirdParagraph;
   expandButton.textContent = "Expand";
 
  
   expandButton.addEventListener("click", function(event) {
   articleClass.classList.toggle("article-open");
   })
-
+  console.log("pepe");
 console.log(articleClass);
 return articleClass;
 }  
@@ -157,4 +157,4 @@ return articleClass;
 */
 
 
-console.log(articleDiv);
+console.log("popo");
