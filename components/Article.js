@@ -156,6 +156,21 @@ return articleClass;
   /*Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+// const newObject = [{
+//   title: 'Angela got her first dose of Pfizer!',
+//   date: 'April 7th, 2021',
+//   thirdParagraph: `COVID-19 vaccines are effective at protecting you from getting sick. Based on what we know about COVID-19 vaccines, people who have been fully vaccinated can start to do some things that they had stopped doing because of the pandemic.
 
+//   We’re still learning how vaccines will affect the spread of COVID-19. After you’ve been fully vaccinated against COVID-19, you should keep taking precautions—like wearing a mask, staying 6 feet apart from others, and avoiding crowds and poorly ventilated spaces—in public places until we know more.
+  
+//   These recommendations can help you make decisions about daily activities after you are fully vaccinated. They are not intended for healthcare settings.`}];
 
-console.log("popo");
+  data.push({
+    title: 'Angela got her first dose of Pfizer!',
+    date: 'April 7th, 2021',
+    firstParagraph: `COVID-19 vaccines are effective at protecting you from getting sick. Based on what we know about COVID-19 vaccines, people who have been fully vaccinated can start to do some things that they had stopped doing because of the pandemic.`,
+  
+    secondParagraph: `We’re still learning how vaccines will affect the spread of COVID-19. After you’ve been fully vaccinated against COVID-19, you should keep taking precautions—like wearing a mask, staying 6 feet apart from others, and avoiding crowds and poorly ventilated spaces—in public places until we know more.`,
+    
+    thirdParagraph: `These recommendations can help you make decisions about daily activities after you are fully vaccinated. They are not intended for healthcare settings.`});
+console.log(data);
