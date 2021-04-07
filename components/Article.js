@@ -125,6 +125,7 @@ function articleMaker(  articleObject  ) {
   articleDate.classList.add('date');
   expandButton.classList.add('expandButton');
 
+  articleTitle.textContent = articleObject.title;
   articleDate.textContent = articleObject.date;
   articleP1.textContent = articleObject.firstParagraph;
   articleP2.textContent = articleObject.secondParagraph;
@@ -135,8 +136,8 @@ function articleMaker(  articleObject  ) {
   expandButton.addEventListener("click", function(event) {
   articleClass.classList.toggle("article-open");
   })
-  console.log("pepe");
-console.log(articleClass);
+  
+
 return articleClass;
 }  
   /*Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
@@ -148,7 +149,7 @@ return articleClass;
   to create a div.article element and append it to the DOM inside div.articles (see index.html).*/
   data.length && data.forEach(articleObject => {
     const newArticle = articleMaker(articleObject)  
-    document.body.prepend(newArticle)     
+    document.body.append(newArticle)     
   });
   
 
