@@ -140,6 +140,8 @@ function articleMaker(  articleObject  ) {
 
 return articleClass;
 }  
+
+
   /*Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
   This listener should toggle the class 'article-open' on div.article.*/
 
